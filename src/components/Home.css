@@ -1,0 +1,100 @@
+/* Home.css */
+.section {
+    padding: 2em;
+    background: #333; /* Dark background */
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+    text-align: left;
+    padding: 2em;
+    max-width: 50%;
+    margin: auto;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .content h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0.1em;
+  }
+  
+  .content h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 0.5em;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .typewriter-container {
+    background-color: #ce3635;
+    text-align: center;
+    color: #fff;
+    padding-top: 1em;
+  }
+  
+  .typewriter-container .typewrite > .wrap {
+    border-right: 0.08em solid #fff;
+  }
+  
+  .image-container {
+    max-width: 30%;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #f39c12;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
