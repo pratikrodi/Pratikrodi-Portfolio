@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Pratikrodi-Portfolio/static/css/main.a8e5e871.css",
+    "main.js": "/Pratikrodi-Portfolio/static/js/main.01a59c72.js",
+    "static/js/453.1407b060.chunk.js": "/Pratikrodi-Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Pratik_icon.png": "/Pratikrodi-Portfolio/static/media/Pratik_icon.b884f860e5ff32d74b56.png",
+    "static/media/roboto-latin-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-latin-400-normal.297d48e1b5a10c0831a9.woff2",
+    "static/media/outfit-latin-400-normal.woff": "/Pratikrodi-Portfolio/static/media/outfit-latin-400-normal.741bd8369a31b33122b4.woff",
+    "static/media/roboto-latin-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-latin-400-normal.047a7839f69b209db815.woff",
+    "static/media/roboto-cyrillic-ext-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-cyrillic-ext-400-normal.5cec61a21cc20180fbe1.woff2",
+    "static/media/outfit-latin-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/outfit-latin-400-normal.8f48df74b0b71f7810ab.woff2",
+    "static/media/roboto-cyrillic-ext-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-cyrillic-ext-400-normal.135d076fa32aa0b4d105.woff",
+    "static/media/roboto-latin-ext-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-latin-ext-400-normal.2eeae187764baf05867d.woff2",
+    "static/media/roboto-latin-ext-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-latin-ext-400-normal.27da5b36b6d3a16f53f4.woff",
+    "static/media/roboto-cyrillic-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-cyrillic-400-normal.a9e19870cf6c4b973427.woff2",
+    "static/media/roboto-cyrillic-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-cyrillic-400-normal.5d2930082227d172f62c.woff",
+    "static/media/outfit-latin-ext-400-normal.woff": "/Pratikrodi-Portfolio/static/media/outfit-latin-ext-400-normal.bcad4dc76d21abb653fc.woff",
+    "static/media/roboto-greek-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-greek-400-normal.2c32b1315be61477013a.woff2",
+    "static/media/roboto-greek-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-greek-400-normal.160a791a8e4f46bca3cc.woff",
+    "static/media/outfit-latin-ext-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/outfit-latin-ext-400-normal.d686e869b41efb6c1f03.woff2",
+    "static/media/roboto-vietnamese-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-vietnamese-400-normal.d3f8e26d6c27de8102b6.woff2",
+    "static/media/roboto-vietnamese-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-vietnamese-400-normal.0dc97c66f9b542d6fa17.woff",
+    "static/media/roboto-greek-ext-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-greek-ext-400-normal.1df4abad55796d11a0c8.woff2",
+    "static/media/roboto-greek-ext-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
+    "index.html": "/Pratikrodi-Portfolio/index.html",
+    "main.a8e5e871.css.map": "/Pratikrodi-Portfolio/static/css/main.a8e5e871.css.map",
+    "main.01a59c72.js.map": "/Pratikrodi-Portfolio/static/js/main.01a59c72.js.map",
+    "453.1407b060.chunk.js.map": "/Pratikrodi-Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8e5e871.css",
+    "static/js/main.01a59c72.js"
+  ]
+}
