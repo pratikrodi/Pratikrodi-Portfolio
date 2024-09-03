@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pratikrodi-Portfolio/static/css/main.a8e5e871.css",
-    "main.js": "/Pratikrodi-Portfolio/static/js/main.01a59c72.js",
+    "main.css": "/Pratikrodi-Portfolio/static/css/main.03c36f00.css",
+    "main.js": "/Pratikrodi-Portfolio/static/js/main.ec8ab68f.js",
     "static/js/453.1407b060.chunk.js": "/Pratikrodi-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Pratik_icon.png": "/Pratikrodi-Portfolio/static/media/Pratik_icon.b884f860e5ff32d74b56.png",
     "static/media/roboto-latin-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-latin-400-normal.297d48e1b5a10c0831a9.woff2",
@@ -23,12 +23,12 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/Pratikrodi-Portfolio/static/media/roboto-greek-ext-400-normal.1df4abad55796d11a0c8.woff2",
     "static/media/roboto-greek-ext-400-normal.woff": "/Pratikrodi-Portfolio/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/Pratikrodi-Portfolio/index.html",
-    "main.a8e5e871.css.map": "/Pratikrodi-Portfolio/static/css/main.a8e5e871.css.map",
-    "main.01a59c72.js.map": "/Pratikrodi-Portfolio/static/js/main.01a59c72.js.map",
+    "main.03c36f00.css.map": "/Pratikrodi-Portfolio/static/css/main.03c36f00.css.map",
+    "main.ec8ab68f.js.map": "/Pratikrodi-Portfolio/static/js/main.ec8ab68f.js.map",
     "453.1407b060.chunk.js.map": "/Pratikrodi-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8e5e871.css",
-    "static/js/main.01a59c72.js"
+    "static/css/main.03c36f00.css",
+    "static/js/main.ec8ab68f.js"
   ]
 }
