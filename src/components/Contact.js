@@ -125,38 +125,6 @@ const Contact = () => {
       </Heading>
       
       <ContentContainer>
-        <IconsContainer>
-          <IconWrapper>
-            <a href="tel:+919767597682" target="_blank" rel="noopener noreferrer">
-              <FaPhone />
-            </a>
-          </IconWrapper>
-
-          <IconWrapper>
-            <a href="https://wa.me/919767597682" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp />
-            </a>
-          </IconWrapper>
-
-          <IconWrapper>
-            <a href="mailto:prateekrodi@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FaEnvelope />
-            </a>
-          </IconWrapper>
-
-          <IconWrapper>
-            <a href="https://www.instagram.com/pr.prateek?igsh=dHdiYThtd244YjU0" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-          </IconWrapper>
-
-          <IconWrapper>
-            <a href="https://www.google.com/maps/place/PATIL+COMPLEX/@18.4629265,73.831348,19.5z/data=!4m6!3m5!1s0x3bc29526ca884249:0x297d5f0e124e589d!8m2!3d18.462823!4d73.8312391!16s%2Fg%2F11sns31sg4?entry=ttu" target="_blank" rel="noopener noreferrer">
-              <FaAddressCard />
-            </a>
-          </IconWrapper>
-        </IconsContainer>
-
         <FormContainer>
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required />

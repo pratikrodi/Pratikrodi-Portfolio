@@ -1,0 +1,93 @@
+.project-section {
+  position: relative;
+  padding: 7em 2em;
+  background: #000000;
+  background-image: var(--section-background-color);
+  min-height: 100vh;
+  color: #c0c0c0;
+}
+
+.project-heading {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+
+.project-card {
+  padding: 20px;
+  margin-bottom: 1.5em;
+  height: auto;
+  width: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-view {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(119, 53, 136, 0.459);
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.5s ease;
+  height: 30em;
+  width: 20em;
+  
+}
+
+.project-card-view:hover {
+  transform: scale(1.05);
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(129, 72, 144, 0.561);
+}
+
+.card-image img {
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-view:hover .card-image img {
+  opacity: 1;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #623686;
+  border-color: #623686;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6d20c5d7;
+  border-color: #6d20c5d7;
+}
+
+.btn-secondary {
+  background-color: #5a5a5a;
+  border: none;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #4a4a4a;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 2em;
+  }
+
+  .project-card-view .btn {
+    font-size: 0.9em;
+  }
+}

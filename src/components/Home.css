@@ -1,0 +1,233 @@
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* General section styling */
+.section {
+  padding: 2em;
+  background: #000000;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive section padding for smaller screens */
+@media (max-width: 768px) {
+  .section {
+    padding: 1em;
+  }
+}
+
+/* Text styles */
+.section p {
+  color: #c0c0c0;
+  margin-bottom: -1em;
+}
+
+.section span {
+  color: #be7dff;
+}
+
+/* Content wrapper for layout */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2em;
+}
+
+/* Responsive content wrapper for smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Content block styling */
+.content {
+  text-align: left;
+  animation: fadeIn 1s ease-out;
+  padding: 2em;
+  max-width: 50%;
+}
+
+/* Responsive content block for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+/* Heading styles */
+.content h1 {
+  font-size: 2em;
+  color: white;
+  margin-top: 3em;
+}
+
+/* Responsive heading for smaller screens */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Subheading styles */
+.content h2 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 0.5em;
+  animation: slideIn 1s ease-out;
+}
+
+/* Responsive subheading for smaller screens */
+@media (max-width: 768px) {
+  .content h2 {
+    font-size: 2em;
+  }
+}
+
+/* Secondary heading styles */
+.content h3 {
+  font-size: 2em;
+  color: #be7dff;
+  margin-top: 1em;
+}
+
+/* Responsive secondary heading for smaller screens */
+@media (max-width: 768px) {
+  .content h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* Paragraph text styles */
+.content p {
+  font-size: 1.2em;
+  color: #bcbcbc;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-out;
+  margin-top: 2em;
+}
+
+/* Responsive paragraph text for smaller screens */
+@media (max-width: 768px) {
+  .content p {
+    font-size: 1em;
+  }
+}
+
+/* Wave animation styles */
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: waveAnimation 2.1s infinite;
+}
+
+/* Responsive wave animation for smaller screens */
+@media (max-width: 768px) {
+  .wave {
+    font-size: 1.5em;
+  }
+}
+
+/* Image container styling */
+.image-container {
+  max-width: 300px;
+  animation: fadeIn 1s ease-out;
+  margin-left: 4em;
+}
+
+/* Responsive image container for smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    margin-left: 0;
+    max-width: 80%;
+    margin-top: 2em;
+  }
+}
+
+/* Image styles */
+.image-container img {
+  width: 100%;
+  margin-top: 3em;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+/* Social links item styling */
+.social-links li {
+  margin: 0 1em;
+}
+
+/* Social links anchor styling */
+.social-links li a {
+  color: #bcbcbc;
+  font-size: 2em;
+  transition: color 0.3s ease;
+}
+
+/* Social links hover effect */
+.social-links li a:hover {
+  color: #be7dff;
+}
