@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaEnvelope, FaPhone, FaAddressCard, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Section = styled.section`
   padding: 7em 2em;
@@ -33,50 +32,6 @@ const ContentContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1200px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-`;
-
-const IconsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2em;
-
-  @media (min-width: 768px) {
-    margin-right: 2em;
-    margin-bottom: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
-
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 1em;
-  color: #be7dff;
-  font-size: 2em;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #be7dff;
-    }
-  }
-
-  span {
-    font-size: 1.2em;
-    color: #c0c0c0;
-    margin-left: 0.5em;
-  }
 `;
 
 const FormContainer = styled.form`
@@ -108,15 +63,37 @@ const FormContainer = styled.form`
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background 0.3s ease;
-
-    &:hover {
-      background: #be7dff;
-    }
   }
 `;
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [responseMessage, setResponseMessage] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      setResponseMessage(data.message);
+    } catch (error) {
+      setResponseMessage('Failed to send message.');
+    }
+  };
+
   return (
     <Section id="contact">
       <Heading>
@@ -125,21 +102,22 @@ const Contact = () => {
       </Heading>
       
       <ContentContainer>
-        <FormContainer>
+        <FormContainer onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
 
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required />
 
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          <textarea id="message" name="message" rows="4" value={formData.message} onChange={handleChange} placeholder="Your Message" required></textarea>
 
           <button type="submit">Send Message</button>
+          <p>{responseMessage}</p>
         </FormContainer>
       </ContentContainer>
     </Section>
   );
-}
+};
 
 export default Contact;
