@@ -1,120 +1,131 @@
-/* Resume.css */
-
-/* Section styling */
+/* Resume Section */
 #resume {
-    padding: 7em 2em;
-    background: #000000;
-    min-height: 100vh;
+  padding: 5em 1em; /* Reduced padding for smaller screens */
+  background: #000000;
+  min-height: 100vh;
+}
+
+/* Resume Heading */
+#resume h2 {
+  color: #be7dff;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Resume Paragraph */
+#resume p {
+  color: #c0c0c0;
+  font-size: 1.2em;
+  margin: auto;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Section Heading */
+.heading {
+  color: #be7dff;
+  font-size: 2.3em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* Styled Container */
+.styled-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+  padding: 20px;
+  height: auto;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 50em; /* Max-width for larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Wrapper2 */
+.card-wrapper2 {
+  padding: 20px;
+  height: auto; /* Height auto for better flexibility */
+  width: 100%; /* Full width for responsiveness */
+  max-width: 20em; /* Max-width for larger screens */
+  margin: 1em;
+}
+
+/* Styled Card */
+.styled-card {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  transition: all 0.5s ease;
+  height: 100%;
+}
+
+/* Styled Card Hover Effect */
+.styled-card:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.8em;
+  color: #be7dff;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 1.2em;
+  color: #c0c0c0;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+/* Button Wrapper */
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #resume {
+    padding: 4em 1em; /* Reduced padding for smaller screens */
   }
-  
-  #resume h2 {
-    color: #be7dff;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  
+
   #resume p {
-    color: #c0c0c0;
-    font-size: 1.2em;
-    margin: auto;
-    max-width: 800px;
-    line-height: 1.6;
-    text-align: center;
+    font-size: 1em;
+    padding: 0 1em;
   }
-  
+
   .heading {
-    color: #be7dff;
-    font-size: 2.3em;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    font-size: 2em;
   }
-  
+
+  .card-wrapper, .card-wrapper2 {
+    width: 100%; /* Full width for responsiveness */
+    margin: 1em 0; /* Adjusted margin for better spacing */
+  }
+
   .styled-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
-  }
-  
-  .card-wrapper {
-    padding: 20px;
-    height: auto;
-    width: 50em;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
-  
-  .card-wrapper2 {
-    padding: 20px;
-    height: 27em;
-    width: 20em;
-    margin: 1em;
-  }
-  
-  .styled-card {
-    padding: 20px;
-    background-color: #000000;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-    transition: all 0.5s ease 0s;
-    height: 100%;
-  }
-  
-  .styled-card:hover {
-    transform: scale(1.02);
-    overflow: hidden;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
-  }
-  
-  .card-title {
-    font-size: 1.8em;
-    color: #be7dff;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-  
-  .card-text {
-    font-size: 1.2em;
-    color: #c0c0c0;
-    text-align: justify;
-    margin-bottom: 1em;
-  }
-  
-  .button-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    #resume p {
-      font-size: 1em;
-      padding: 0 1em;
-    }
-  
-    .heading {
-      font-size: 2em;
-    }
-  
-    .card-wrapper {
-      width: 100%;
-    }
-  
-    .card-wrapper2 {
-      width: 100%;
-    }
-  
-    .styled-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}

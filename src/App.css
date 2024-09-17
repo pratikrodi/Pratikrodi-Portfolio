@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,12 +10,24 @@ header {
   padding: 20px;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd; /* Lighten color on hover */
 }
 
 section {
@@ -30,13 +43,65 @@ form label {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  /* Styles for tablets and smaller desktops */
   header {
+    padding: 15px;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
   nav a {
     display: block;
     margin: 10px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for very small devices like phones */
+  header {
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  form label {
+    margin-bottom: 8px; /* Adjust margin for labels */
   }
 }

@@ -1,12 +1,14 @@
+/* Project Section */
 .project-section {
   position: relative;
-  padding: 7em 2em;
+  padding: 5em 1em; /* Reduced padding for smaller screens */
   background: #000000;
   background-image: var(--section-background-color);
   min-height: 100vh;
   color: #c0c0c0;
 }
 
+/* Project Heading */
 .project-heading {
   color: white;
   font-size: 2.5em;
@@ -15,16 +17,17 @@
   font-weight: 500;
 }
 
+/* Project Card Container */
 .project-card {
   padding: 20px;
   margin-bottom: 1.5em;
-  height: auto;
-  width: 50em;
+  width: 100%; /* Full width for responsiveness */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Project Card View */
 .project-card-view {
   padding: 20px;
   background-color: #1a1a1a;
@@ -34,27 +37,31 @@
   color: white;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.5s ease;
   height: 30em;
-  width: 20em;
-  
+  width: 100%; /* Full width for responsiveness */
+  max-width: 20em; /* Max-width to maintain design consistency */
 }
 
+/* Hover Effect for Project Card View */
 .project-card-view:hover {
   transform: scale(1.05);
   background-color: #333;
   box-shadow: 0 4px 8px rgba(129, 72, 144, 0.561);
 }
 
+/* Card Image */
 .card-image img {
-  padding: 20px;
+  width: 100%; /* Full width for responsiveness */
   border-radius: 10px 10px 0 0;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
+/* Hover Effect for Card Image */
 .project-card-view:hover .card-image img {
   opacity: 1;
 }
 
+/* Buttons */
 .btn-primary {
   color: #fff;
   background-color: #623686;
@@ -82,12 +89,31 @@
   box-shadow: none;
 }
 
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-  .project-heading {
-    font-size: 2em;
+  .project-section {
+    padding: 4em 1em; /* Reduced padding for smaller screens */
   }
 
-  .project-card-view .btn {
-    font-size: 0.9em;
+  .project-heading {
+    font-size: 2em; /* Adjusted font size for smaller screens */
+  }
+
+  .project-card {
+    margin: 0.5em 0; /* Adjusted margin for better spacing */
+  }
+
+  .project-card-view {
+    height: auto; /* Adjusted height for smaller screens */
+    width: 90%; /* Full width with padding for smaller screens */
+    max-width: 100%; /* Remove max-width restriction */
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 0.9em; /* Adjusted button font size for smaller screens */
+  }
+
+  .btn-secondary {
+    margin-left: 0; /* Removed margin for smaller screens */
   }
 }
